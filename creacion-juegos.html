@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IESTP - Taller de Programación de Robots</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="taller-robots.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom"></nav>
+
+    <!-- Hero Section con imagen de fondo -->
+    <div class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Taller de Programación de Robots</h1>
+        <p class="hero-subtitle">Programa, arma y controla robots de forma divertida y práctica</p>
+        <a href="medio-pago.html" class="btn-hero">Inscríbete Ahora</a>
+      </div>
+    </div>
+
+    <div class="containere">
+      <!-- Sección: ¿Qué aprenderás? -->
+      <section class="course-description fade-in">
+        <div class="section-header">
+          <h2>¿Qué aprenderás en el taller?</h2>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Programación divertida</h3>
+            <p>Aprenderás lógica de programación controlando robots en retos reales.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Armado y sensores</h3>
+            <p>Conocerás piezas, motores y sensores para construir robots funcionales.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Pensamiento lógico</h3>
+            <p>Desarrollarás habilidades de lógica, creatividad y resolución de problemas.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección: Descripción -->
+      <section class="description-section fade-in">
+        <div class="description-wrapper">
+          <div class="description-image">
+            <!-- Cambia la imagen por una de robots -->
+            <img src="img/talleres/robots-programacion.jpg" alt="Taller de Programación de Robots" />
+            <div class="image-overlay">
+              <i class="fas fa-microchip"></i>
+            </div>
+          </div>
+          <div class="description-content">
+            <h2>Descripción del Taller</h2>
+            <p>
+              Taller orientado a niños y adolescentes que desean iniciarse en la robótica educativa
+              usando plataformas como <strong>LEGO</strong>, <strong>Arduino</strong> o kits similares según la sede.
+            </p>
+            <p>
+              A través de proyectos guiados, los participantes diseñan, ensamblan y programan robots
+              para superar misiones y desafíos, fortaleciendo su pensamiento lógico y trabajo en equipo.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Módulos</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Práctico</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">+8</div>
+                <div class="stat-label">Años</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección: Temario -->
+      <section class="course-syllabus fade-in">
+        <div class="section-header">
+          <h2>Temario del Taller</h2>
+        </div>
+
+        <!-- Tema 1 -->
+        <div class="topic">
+          <div class="topic-header" onclick="toggleContent('tema1')">
+            <div class="topic-left">
+              <span class="topic-number">01</span>
+              <span class="topic-title">Introducción a la Robótica</span>
+            </div>
+            <span class="arrow fas fa-chevron-down"></span>
+          </div>
+          <div id="tema1" class="topic-content">
+            <ul>
+              <li><i class="fas fa-check"></i> ¿Qué es un robot? Componentes básicos</li>
+              <li><i class="fas fa-check"></i> Tipos de robots educativos</li>
+              <li><i class="fas fa-check"></i> Seguridad y cuidado de los kits</li>
+              <li><i class="fas fa-check"></i> Entorno de programación por bloques</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tema 2 -->
+        <div class="topic">
+          <div class="topic-header" onclick="toggleContent('tema2')">
+            <div class="topic-left">
+              <span class="topic-number">02</span>
+              <span class="topic-title">Sensores y movimiento</span>
+            </div>
+            <span class="arrow fas fa-chevron-down"></span>
+          </div>
+          <div id="tema2" class="topic-content">
+            <ul>
+              <li><i class="fas fa-check"></i> Motores y control de movimiento</li>
+              <li><i class="fas fa-check"></i> Sensor de distancia y seguimiento de línea</li>
+              <li><i class="fas fa-check"></i> Lectura de sensores en el software</li>
+              <li><i class="fas fa-check"></i> Práctica: Robot que evita obstáculos</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tema 3 -->
+        <div class="topic">
+          <div class="topic-header" onclick="toggleContent('tema3')">
+            <div class="topic-left">
+              <span class="topic-number">03</span>
+              <span class="topic-title">Algoritmos y misiones</span>
+            </div>
+            <span class="arrow fas fa-chevron-down"></span>
+          </div>
+          <div id="tema3" class="topic-content">
+            <ul>
+              <li><i class="fas fa-check"></i> Secuencias, ciclos y condicionales</li>
+              <li><i class="fas fa-check"></i> Diseño de misiones paso a paso</li>
+              <li><i class="fas fa-check"></i> Depuración de programas</li>
+              <li><i class="fas fa-check"></i> Práctica: Robot que sigue una ruta</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tema 4 -->
+        <div class="topic">
+          <div class="topic-header" onclick="toggleContent('tema4')">
+            <div class="topic-left">
+              <span class="topic-number">04</span>
+              <span class="topic-title">Proyecto final de robot</span>
+            </div>
+            <span class="arrow fas fa-chevron-down"></span>
+          </div>
+          <div id="tema4" class="topic-content">
+            <ul>
+              <li><i class="fas fa-check"></i> Definición del desafío final</li>
+              <li><i class="fas fa-check"></i> Diseño y armado del prototipo</li>
+              <li><i class="fas fa-check"></i> Programación y pruebas</li>
+              <li><i class="fas fa-check"></i> Presentación del proyecto en equipo</li>
+              <li><i class="fas fa-check"></i> Retroalimentación y certificación</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección: Requisitos e Inscripción -->
+      <section class="requirements-section fade-in" id="inscripcion">
+        <div class="requirements-wrapper">
+          <div class="requirements-content">
+            <h2><i class="fas fa-clipboard-check"></i> Requisitos</h2>
+            <ul class="requirements-list">
+              <li><i class="fas fa-child"></i> Edad recomendada: desde 8 años</li>
+              <li><i class="fas fa-laptop"></i> Laptop o PC para la parte de programación</li>
+              <li><i class="fas fa-wifi"></i> Conexión estable a internet (para modalidad online)</li>
+              <li><i class="fas fa-lightbulb"></i> Curiosidad por la tecnología y los robots</li>
+            </ul>
+          </div>
+          <div class="cta-box">
+            <h3>¿Listo para programar robots?</h3>
+            <p>Inscríbete ahora y vive la experiencia STEAM completa.</p>
+            <a href="medio-pago.html" class="btn-inscribirse">
+              <i class="fas fa-rocket"></i> Inscríbete Ahora
+            </a>
+            <div class="cta-features">
+              <span><i class="fas fa-certificate"></i> Certificado</span>
+              <span><i class="fas fa-clock"></i> Horarios flexibles</span>
+              <span><i class="fas fa-users"></i> Trabajo en equipo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer"></footer>
+
+    <script>
+      // Función para mostrar/ocultar el contenido de los temas
+      function toggleContent(tema) {
+        var content = document.getElementById(tema);
+        var arrow = content.previousElementSibling.querySelector('.arrow');
+
+        if (content.classList.contains('show')) {
+          content.classList.remove('show');
+          arrow.classList.remove('fa-chevron-up');
+          arrow.classList.add('fa-chevron-down');
+        } else {
+          content.classList.add('show');
+          arrow.classList.remove('fa-chevron-down');
+          arrow.classList.add('fa-chevron-up');
+        }
+      }
+
+      // Animaciones al hacer scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+      function loadHTML(id, url) {
+        fetch(url)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          });
+      }
+      loadHTML('navbar', 'nav.html');
+      loadHTML('footer', 'footer.html');
+    </script>
+  </body>
+</html>

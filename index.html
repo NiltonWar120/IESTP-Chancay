@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IESTP - CHANCAY</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Touch+Me+Sans+Petite+Black&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <main>
+    <!-- Navbar -->
+
+     <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom ">
+     
+    </nav>
+    <!-- Carousel IESP-->
+    <div id="institucionalCarousel" class="carousel slide carousel-fade carousel-section" data-bs-ride="carousel"
+      data-bs-interval="2000">
+
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/C1.jpg" class="d-block w-100" alt="Licenciamiento">
+          <div class="carousel-caption-custom">
+            <h2>¡Hemos logrado el Licenciamiento!</h2>
+            <p>El IES Chancay ya nos encontramos licenciados hasta el 2028</p>
+            <a href="#">Conoce más aquí</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/C2.jpg" class="d-block w-100" alt="Campus">
+          <div class="carousel-caption-custom">
+            <h2>¡Postula y se un pionero dle futuro!</h2>
+            <p>Particpa en nuestro proximo proceso de admision</p>
+            <a href="#">Ver mas</a>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/C3.jpg" class="d-block w-100" alt="Estudiantes">
+          <div class="carousel-caption-custom">
+            <h2>¡Se parte de nuestra familia!</h2>
+            <p>Ven y matriculate con nosotros</p>
+            <a href="#">Mas informacion</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#institucionalCarousel" data-bs-slide="prev">
+        <!--<span class="carousel-control-prev-icon"></span> -->
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#institucionalCarousel" data-bs-slide="next">
+        <!--<span class="carousel-control-next-icon"></span></span> -->
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+
+
+      <!-- Menú de íconos  -->
+      <div class="icon-box">
+        <div class="icon-item">
+          <i class="bi bi-mortarboard"></i>
+          <span>IES</span>
+        </div>
+        <div class="icon-item">
+          <i class="bi bi-file-earmark-text"></i>
+          <span>Documentos</span>
+        </div>
+        <div class="icon-item">
+          <i class="bi bi-journal-text"></i>
+          <span>TUPA</span>
+        </div>
+        <div class="icon-item">
+          <i class="bi bi-laptop"></i>
+          <span>Plataforma Virtual</span>
+        </div>
+        <div class="icon-item">
+          <i class="bi bi-book"></i>
+          <span>Biblioteca Virtual</span>
+        </div>
+        <div class="icon-item">
+          <i class="bi bi-newspaper"></i>
+          <span>Hemeroteca Virtual</span>
+        </div>
+      </div>
+
+      <div class="carousel-info">
+        <p>Infórmate de nuestros eventos y noticias institucionales</p>
+        <a href="#" class="btn-news">Ver noticas </a>
+      </div>
+    </div>
+    <!-- Registro  -->
+    <section class="registro-section">
+      <div class="registro-contenido">
+
+        <div class="texto-info">
+          <h2 class="typing-loop" data-text="Cursos Cortos">Cursos Cortos</h2>
+          <p class="typing-delay">
+            <strong>Actualízate</strong> y <strong>especialízate</strong> con nuestros cursos cortos,
+            creados con la más alta calidad educativa para asegurar tu aprendizaje.
+          </p>
+
+        </div>
+
+        <!-- FORMULARIO  -->
+        <div class="registro-formulario">
+          <h3>Formulario de Registro</h3>
+          <form>
+
+            <div class="formulario-grid">
+              <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div>
+                <label for="apellidop">Apellido Paterno</label>
+                <input type="text" id="apellidop" name="apellidop" required>
+              </div>
+              <div>
+                <label for="apellidom">Apellido Materno</label>
+                <input type="text" id="apellidom" name="apellidom" required>
+              </div>
+              <div>
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+              </div>
+              <div>
+                <label for="documento">N° de Documento</label>
+                <input type="text" id="documento" name="documento" required>
+              </div>
+              <div>
+                <label for="celular">Celular</label>
+                <input type="tel" id="celular" name="celular" required>
+              </div>
+              <div>
+                <label for="especialidad">Especialidad</label>
+                <input type="text" id="especialidad" name="especialidad" required>
+              </div>
+              <div>
+                <label for="curso">Curso de Interés</label>
+                <input type="text" id="curso" name="curso" required>
+              </div>
+            </div>
+
+            <div class="checkbox-container">
+              <div class="checkbox">
+                <input type="checkbox" id="check1">
+                <label for="check1">
+                  Autorizo el tratamiento de mis datos personales para finalidades informativas
+                  y comerciales, conforme al <a href="#">enlace</a>. Sin mi autorización, no podrán comunicarse conmigo.
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <input type="checkbox" id="check2">
+                <label for="check2">
+                  Opcionalmente, autorizo el tratamiento de mis datos personales para las finalidades
+                  comerciales adicionales descritas en el <a href="#">siguiente enlace</a>.
+                </label>
+              </div>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- AREA DE DOCENTES -->
+    <section class="team-section">
+      <h2 class="section-title">
+        <span class="highlight-red">Los que enseñan,</span> motivan y transforman
+      </h2>
+
+      <!-- Botones de especialidad (onclick) -->
+<div class="specialty-buttons">
+  <button type="button" class="specialty-btn active" onclick="showTeachers('contabilidad')">
+    <i class="fas fa-calculator"></i> Contabilidad
+  </button>
+  <button type="button" class="specialty-btn" onclick="showTeachers('sistemas')">
+    <i class="fas fa-laptop-code"></i> Sistemas de Información
+  </button>
+  <button type="button" class="specialty-btn" onclick="showTeachers('transversales')">
+    <i class="fas fa-users"></i> Transversales
+  </button>
+</div>
+
+      <!-- ===== CONTABILIDAD ===== -->
+      <div id="contabilidad" class="teachers-group active">
+        <h3>Docentes de la Especialidad de Contabilidad</h3>
+        <div class="team-cards-container">
+          <div class="team-cards">
+
+            <!-- DOCENTE 1 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente1.png" alt="Docente 1" class="team-img">
+                  <p class="team-name">Alfonso Salinas Castillo</p>
+                  <p class="team-info">Años de experiencia en el sector productivo y Educación Superior</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>ALFONSO SALINAS CASTILLO</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Contador Púbico Colegiado cuento con años de experiencia en el sector productivo y
+                      Educación Superior,a lo largo de mi experiencia profesional, he desarrollado diversas funciones en
+                      el sector público y privado.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1jHE4hnaciyUznpUYnUpVbmMZBjnlE6Uh/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/14s7GhY9Ku3gXcZOCUjHTx_110S5gn_kl/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOCENTE 2 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente2.png" alt="Docente 2" class="team-img">
+                  <p class="team-name">Mario A. Artica Gonzales</p>
+                  <p class="team-info">+26 años de experiencia en el sector productivo.</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>MARIO ALEJANDRO ARTICA GONZALES</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Contador Público Colegiado, certificado en Gestión Pública para el Desarrollo (BID).
+                      Experiencia en diversas funciones relacionadas a su carrera ,he desarrollado diversas funciones
+                      relacionado a mi carrera.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1wviOB78t5Flc2-alK-iCnUsL1ip7dgqu/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1dtiRR0uHoI5wP2-s3AcGbeF06zCVT4kC/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOCENTE 3 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente3.png" alt="Docente 3" class="team-img">
+                  <p class="team-name">Luis A. Carreño Chirito</p>
+                  <p class="team-info">Experiencia en el sector productivo y educación superior.</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>LUIS ALBERTO CARREÑO CHIRITO</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Contador Público Colegiado, egresado de Maestría en Tributación, he desarrollado diversas
+                      funciones
+                      así como en otros sectores en el área de la Educación a Nivel Superior
+                      Técnico.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/10RmN0zlE8PpREp0Yflvu-OX7lWS7Uert/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1asXsapnP2drq-xvEHLcHFKBewBNhkrIJ/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOCENTE 4 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente4.png" alt="Docente 4" class="team-img">
+                  <p class="team-name">Liliana P. Reyna </p>
+                  <p class="team-info">Experiencia en el sector productivo y educación superior.</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>LILIANA PATY REYNA SANTIBAÑEZ</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Contador Público Colegiado con grado de Maestría en Gestión Pública con mención en Gerencia
+                      Empresarial,he desarrollado diversas funciones en los
+                      diferentes niveles de atención en el sector productivo, así como en otros sectores.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1evpi3KxS9Pa8_-NfxBG2rSdMTNTHVrNz/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1d8BsCIia0bsLE-BnQdeLgwgoJTIDtBnD/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DOCENTE 5 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente5.png" alt="Docente 5" class="team-img">
+                  <p class="team-name">Gerardo M. Jaramillo </p>
+                  <p class="team-info">+14 años de experiencia en el sector productivo.</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>GERARDO MARCELO JARAMILLO PADILLA</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Licenciado y Colegiado Habilitado en Administración, de la Facultad de Ciencias Administrativas,
+                      Turismo y Negocios Internacionales de la UNJFSC,he desarrollado diversas funciones relacionadas a
+                      mi carrera.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1DtLhdBJXDu5iD5Px0sQ741TzPH16UkHp/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1obzmt7mooFPMoVfKfRc3pGmassnjhhKn/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.team-cards -->
+        </div><!-- /.team-cards-container -->
+      </div><!-- /#contabilidad -->
+
+      <!-- ===== SISTEMAS ===== -->
+      <div id="sistemas" class="teachers-group">
+        <h3>Docentes de la Especialidad de Sistemas de Información</h3>
+        <div class="team-cards-container">
+          <div class="team-cards">
+
+            <!-- DOCENTE 6 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente6.png" alt="Docente 6" class="team-img">
+                  <p class="team-name">Hernán F. Peña Carnero</p>
+                  <p class="team-info">Experiencia en sector productivo y educación superior.</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>HERNÁN FRANCISCO PEÑA CARNERO</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Ingeniero de Sistemas Colegiado con grado de Maestría en Gestión de TI
+                      y comunicaciones,he desarrollado diversas funciones en los
+                      diferentes niveles de atención en el sector de las Tecnologías de Información y Comunicación.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1ggwdZussjOg9cXfs8hpaDObMAVIY2RjB/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1fCpjDhkNHG75KRZ5SyTTnW5vu8aKXwiz/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 7 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente7.png" alt="Docente 7" class="team-img">
+                  <p class="team-name">Miguel Á. Loza Peñarán</p>
+                  <p class="team-info">Experiencia en el sector productivo y educación superior</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>MIGUEL ANGEL LOZA PEÑARAN</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Licenciado Colegiado con estudios en Estudios de Posgrado en Educación de Nivel Superior y
+                      Psicología Educativa Tutorial Bachiller en Ingeniería de Sistemas y Técnico en Computación e
+                      Informática.</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1w2iGZBHpzmE39OgAsT9oC3EY9ipzz5Dw/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1cjTa40-DhEcBqV2bOimDPFFL6AvNgLV7/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 8 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente8.png" alt="Docente 8" class="team-img">
+                  <p class="team-name">Kevin C. Huayamares Carbajal</p>
+                  <p class="team-info">Experiencia en el sector productivo y
+                    educación superior</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>KEVIN CHRISTOPHER
+                      HUAYAMARES CARBAJAL</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Ingeniero de Sistemas Colegiado con grado de Maestría en Administración con mención en
+                      Gerencia Empresarial,he desarrollado diversas funciones en
+                      los diferentes niveles de atención en el sector de las TI y Comunicación..</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1JPzWIs7Ouy--opX1dJd4rHfHo33Vx6ja/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1EdwqhSZPjBdMuDH5FGo96cU9s7WWuz8d/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 9 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente9.png" alt="Docente 9" class="team-img">
+                  <p class="team-name">Cesar A. Medina Osorio</p>
+                  <p class="team-info">Experiencia en el sector productivo privado como estatal y educación superior</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>CESAR ALEJANDRO
+                      MEDINA OSORIO</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Ingeniero de Computación y Sistemas Colegiado con grado de Ingeniero,he desarrollado diversas
+                      actividades en los diferentes niveles de atención
+                      en el sector de las TI y Comunicación, Programación..</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1uYKXmHLzt-IcJwdg-9bz-krY5S8x3-La/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/17_F6Z2qFPjVTyqLswH-FFygLGEwN2Srt/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 10 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente10.png" alt="Docente 10" class="team-img">
+                  <p class="team-name">Victor Araoz Montalvo</p>
+                  <p class="team-info">+15 años de experiencia profesional en desarrollo de sistemas de
+                    información</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>VICTOR
+                      ARAOZ MONTALVO</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Ingeniero de Sistemas, con estudios concluidos de Doctorado en Ingeniería de Sistemas, y Maestría
+                      en
+                      Ingeniería de Sistemas de la Escuela de Post Grado de Universidad Nacional Federico Villareal.
+                      Instructor de
+                      CCNAv7 Cisco Networking..</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1HaXf8vKfmc0gBY-EwRPefh0gj3bShsK7/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1etbYtJTrYPjVGsPba_TMPK_EK0_Su-fF/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 11 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente11.png" alt="Docente 11" class="team-img">
+                  <p class="team-name">Beder H. Meza Villanueva</p>
+                  <p class="team-info">8 años de experiencia en el sector productivo y 15 años
+                    en Educación Superior</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>BEDER HENRY
+                      MEZA VILLANUEVA</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Ing. de Sistemas, Colegiado con CIP N° 104646, Licenciado en Matemática Física y Computación con
+                      Grado de
+                      Maestro en Ingeniería de Sistemas, profesional, he desarrollado diversas funciones
+                      en los diferentes niveles de atención en el sector de las TI y Comunicación..</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1J9Xz0-uVXZzFXasEsLrVTRXhbt3JxI1e/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1EQaZFBlLzx160dFCJ48FCxhSzZxGLvXB/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.team-cards -->
+        </div><!-- /.team-cards-container -->
+      </div><!-- /#sistemas -->
+
+      <!-- ===== TRANSVERSALES ===== -->
+      <div id="transversales" class="teachers-group">
+        <h3>Docentes Transversales</h3>
+        <div class="team-cards-container">
+          <div class="team-cards">
+
+            <!-- DOCENTE 12 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente12.png" alt="Docente 12" class="team-img">
+                  <p class="team-name">Luis G. Napán Chumpitaz</p>
+                  <p class="team-info">experiencia profesional en el nivel de educación
+                    secundaria..</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>LUIS GONZAGA
+                      NAPAN CHUMPITAZ</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Licenciado en Administración con grado de Maestro en Administración con mención en
+                      Administración,En el sector productivo
+                      ejerciendo la función administrativa en IST privado y en IESTP Chancay ejerciendo la labor de
+                      docente y el cargo de Jefe de Unidad Académica..</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1-hZvKmWfva1ZAn5q2ZtknlIVivGKH2HO/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1cGO98pRDNhmMbBEx8pzCyoSkgMxmX2Dc/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 13 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente13.png" alt="Docente 13" class="team-img">
+                  <p class="team-name">Mery Rosa Segura Cuellar</p>
+                  <p class="team-info">Licenciado en Educación con grado de Maestría en Docencia Universitaria</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>MERY ROSA
+                      SEGURA CUELLAR</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>A lo largo de mi
+                      experiencia profesional, he desempeñado en diferente cargo del Sector Educativo y la docencia en
+                      los niveles básico y superior no universitario..</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1a5JjiFpqBcTgAUvl_HnGuNtk_6pysP91/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1jbcD3UDgmen55ewy4_lVMvxaqighRAbQ/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 14 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente14.png" alt="Docente 14" class="team-img">
+                  <p class="team-name">Carlos A. García Palacios</p>
+                  <p class="team-info">Docente de profesión, con Colegiatura N°: 0209363790 ..</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>GARCÍA PALACIOS, CARLOS ALBERTO</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Magister en Enseñanza de las Matemáticas por la Pontificia Universidad Católica del Perú.
+                      Doctor en Educación por la Universidad César Vallejo,segunda Maestría es Administración de
+                      Negocios Internacionales-MBA por la Universidad César Vallejo..</p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1pNbpGxiynhDI6y-6k3XZVmaKcRVnb87u/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1oQMdS9sdQuj8Up-loZhweyQ_6yW20mpi/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 15 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente15.png" alt="Docente 15" class="team-img">
+                  <p class="team-name">Carlos A. Cucho Vizarreta</p>
+                  <p class="team-info">05 años de experiencia en EBR , 09 años de experiencia en Educación Superior..
+                  </p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>CARLOS A. CUCHO VIZARRETA</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Licenciado en Educación en la especialidad de Matemáticas y Física con grado de Maestro en
+                      Informática Educativa, con Segunda Especialidad en Informática Educativa y Nuevas Tecnologías..
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1tTu6EE44AnzSianEQRZFP4WLgCZIeCf9/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1ETAqCDJzIT18JdUg9tVWYqYF_5AOY_id/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 16 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente16.png" alt="Docente 16" class="team-img">
+                  <p class="team-name">Marin L. Soto Apolinario</p>
+                  <p class="team-info">Experiencia en consultoría de proyectos y docencia en educación superior</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>SOTO APOLINARIO
+                      MARIN L.</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Economista de profesión, egresado de la Universidad Nacional “José Faustino Sánchez Carrión de
+                      Huacho”, con el Grado de Maestro en Gestión Pública,Diplomado en docencia de Educación
+                      Superior..
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1lYB2Ajk9O3ZRGbIFEjeEpCMeQ6kBjCeM/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1WI4YWheaMkx97jNHMRPrlFf8LazyNbj1/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 17 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente17.png" alt="Docente 17" class="team-img">
+                  <p class="team-name">Juan C. Campodónico Dávila</p>
+                  <p class="team-info">Años de experiencia sector productivo</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>JUAN C. CAMPODONICO DAVILA</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Es desarrollarme como profesional, adquiriendo más conocimientos cada día, ser en un futuro una
+                      persona importante en el mundo empresarial, financiero y educacional siendo participe del
+                      desarrollo
+                      y crecimiento..
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1znUb8LDFgT4qb1nOBX1UGTVKrelIMPYi/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1PmXWCnrmOWTitQvMgQ-cvOjxGgCF74PU/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- DOCENTE 18 -->
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <img src="img/docente18.png" alt="Docente 18" class="team-img">
+                  <p class="team-name">Rocky Parraguez Perez</p>
+                  <p class="team-info">Experiencia en el Sector Educativo y
+                    educación superior.</p>
+                </div>
+                <div class="team-card-back">
+                  <div class="card-header">
+                    <h4>IES CHANCAY</h4>
+                    <h5>ROCKY A. PARRAGUEZ PEREZ</h5>
+                  </div>
+                  <div class="card-body">
+                    <p>Lic. En Idioma Extranjero así mismo cuento con años de experiencia en el Sector Educativo y
+                      educación superior, mi objetivo principal es desempeñarme profesionalmente y evolucionar en el
+                      sector productivo...
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="https://drive.google.com/file/d/1QH1k1ShM_jOaSp071vipW3SHXQgW0kmA/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-file-pdf"></i> Curriculum
+                    </a>
+                    <a href="https://drive.google.com/file/d/1kyBLYLdjJC8SUMH4UlXKzCJ7ALbJC3RY/view" class="card-btn"
+                      target="_blank">
+                      <i class="fas fa-book"></i> C. Académica
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.team-cards -->
+        </div><!-- /.team-cards-container -->
+      </div><!-- /#transversales -->
+
+    </section>
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/989077759" class="whatsapp-icon" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </main>
+  <!-- FOOTER-->
+
+   <!-- FOOTER -->
+  <footer class="footer" id="footer">
+  </footer>
+  <script src="script.js"></script>
+<script>
+  //footery navbar
+    function loadHTML(id, url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
+    loadHTML('navbar', 'nav.html');
+    loadHTML('footer', 'footer.html');
+</script>
+</body>
+
+</html>

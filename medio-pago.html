@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Métodos de Pago - IESTP Diseño Gráfico</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="medios-pago.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom"></nav>
+
+    <!-- Particles Background -->
+    <div class="particles-bg" id="particles-bg"></div>
+
+    <!-- Hero Section -->
+    <div class="payment-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-icon-wrapper">
+          <i class="fas fa-lock"></i>
+        </div>
+        <h1 class="hero-title">Métodos de Pago Seguros</h1>
+        <p class="hero-subtitle">Completa tu inscripción de forma rápida y segura</p>
+        <div class="security-badges">
+          <span class="badge-item"><i class="fas fa-shield-alt"></i> Pago Seguro</span>
+          <span class="badge-item"><i class="fas fa-certificate"></i> Certificado SSL</span>
+          <span class="badge-item"><i class="fas fa-check-circle"></i> Verificado</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="payment-container">
+      
+      <!-- Payment Methods Section -->
+      <section class="payment-methods-section">
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Selecciona tu Método de Pago</h2>
+          <p class="section-subtitle">Elige la forma que más te convenga</p>
+        </div>
+
+        <div class="payment-grid">
+          
+          <!-- Tarjeta de Crédito/Débito -->
+          <div class="payment-card" data-payment="card">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="payment-icon">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <h3 class="payment-title">Tarjeta de Crédito/Débito</h3>
+              <p class="payment-description">Visa, Mastercard, American Express</p>
+              <div class="payment-features">
+                <span><i class="fas fa-check"></i> Pago instantáneo</span>
+                <span><i class="fas fa-check"></i> Máxima seguridad</span>
+              </div>
+              <button class="btn-select-payment">Seleccionar</button>
+            </div>
+          </div>
+
+          <!-- Yape -->
+          <div class="payment-card featured" data-payment="yape">
+            <div class="card-glow"></div>
+            <div class="featured-badge">Más Popular</div>
+            <div class="card-content">
+              <div class="payment-icon yape-icon">
+                <img src="img/yape.png" alt="Yape" class="payment-logo" />
+              </div>
+              <h3 class="payment-title">Yape</h3>
+              <p class="payment-description">Pago rápido con tu celular</p>
+              <div class="payment-features">
+                <span><i class="fas fa-check"></i> Sin comisiones</span>
+                <span><i class="fas fa-check"></i> Confirmación inmediata</span>
+              </div>
+              <button class="btn-select-payment">Seleccionar</button>
+            </div>
+          </div>
+
+          <!-- Plin -->
+          <div class="payment-card" data-payment="plin">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="payment-icon plin-icon">
+                <img src="img/plin.png" alt="Plin" class="payment-logo" />
+              </div>
+              <h3 class="payment-title">Plin</h3>
+              <p class="payment-description">Transferencia interbancaria</p>
+              <div class="payment-features">
+                <span><i class="fas fa-check"></i> Multibanco</span>
+                <span><i class="fas fa-check"></i> Seguro y rápido</span>
+              </div>
+              <button class="btn-select-payment">Seleccionar</button>
+            </div>
+          </div>
+
+          <!-- Transferencia Bancaria -->
+          <div class="payment-card" data-payment="transfer">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="payment-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <h3 class="payment-title">Transferencia Bancaria</h3>
+              <p class="payment-description">Desde tu banca online</p>
+              <div class="payment-features">
+                <span><i class="fas fa-check"></i> Todos los bancos</span>
+                <span><i class="fas fa-check"></i> Sin límites</span>
+              </div>
+              <button class="btn-select-payment">Seleccionar</button>
+            </div>
+          </div>
+
+          <!-- PayPal -->
+          <div class="payment-card" data-payment="paypal">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="payment-icon paypal-icon">
+                <i class="fab fa-paypal"></i>
+              </div>
+              <h3 class="payment-title">PayPal</h3>
+              <p class="payment-description">Pago internacional seguro</p>
+              <div class="payment-features">
+                <span><i class="fas fa-check"></i> Protección al comprador</span>
+                <span><i class="fas fa-check"></i> Global</span>
+              </div>
+              <button class="btn-select-payment">Seleccionar</button>
+            </div>
+          </div>
+
+          <!-- Efectivo -->
+          <div class="payment-card" data-payment="cash">
+            <div class="card-glow"></div>
+            <div class="card-content">
+              <div class="payment-icon">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <h3 class="payment-title">Agentes y Efectivo</h3>
+              <p class="payment-description">Agentes BCP, Interbank, BBVA</p>
+              <div class="payment-features">
+                <span><i class="fas fa-check"></i> Sin cuenta bancaria</span>
+                <span><i class="fas fa-check"></i> Fácil y accesible</span>
+              </div>
+              <button class="btn-select-payment">Seleccionar</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Payment Form Section -->
+      <section class="payment-form-section" id="payment-form-section">
+        <div class="form-container">
+          <div class="form-header">
+            <div class="back-button" id="back-button">
+              <i class="fas fa-arrow-left"></i> Volver
+            </div>
+            <h2 class="form-title">Completa tu Pago</h2>
+            <div class="payment-amount">
+              <span class="amount-label">Monto Total:</span>
+              <span class="amount-value">S/ 1,200.00</span>
+            </div>
+          </div>
+
+          <!-- Card Payment Form -->
+          <div class="payment-form card-form" id="card-form">
+            <div class="form-grid">
+              <div class="form-group full-width">
+                <label>Número de Tarjeta</label>
+                <div class="input-wrapper">
+                  <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" class="card-number-input">
+                  <div class="card-type-icon"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Fecha de Expiración</label>
+                <input type="text" placeholder="MM/AA" maxlength="5">
+              </div>
+              <div class="form-group">
+                <label>CVV</label>
+                <input type="text" placeholder="123" maxlength="3">
+              </div>
+              <div class="form-group full-width">
+                <label>Nombre del Titular</label>
+                <input type="text" placeholder="Como aparece en la tarjeta">
+              </div>
+            </div>
+            <button class="btn-pay">
+              <span class="btn-text">Pagar S/ 1,200.00</span>
+              <span class="btn-loader"></span>
+            </button>
+          </div>
+
+          <!-- Yape/Plin Form -->
+          <div class="payment-form qr-form" id="yape-form">
+            <div class="qr-container">
+              <div class="qr-code-wrapper">
+                <img src="img/yapeqr.jpeg" alt="QR Code" class="qr-code">
+              
+              </div>
+              <div class="qr-instructions">
+                <h3>Sigue estos pasos:</h3>
+                <ol>
+                  <li>Abre tu app de <strong class="payment-name">Yape</strong></li>
+                  <li>Escanea el código QR</li>
+                  <li>Confirma el monto de <strong>S/ 1,200.00</strong></li>
+                  <li>Completa el pago</li>
+                </ol>
+                <div class="qr-number">
+                  <p>O transfiere al número:</p>
+                  <div class="phone-number">
+                    <span>+51 987 654 321</span>
+                    <button class="btn-copy"><i class="fas fa-copy"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-pay btn-confirm">
+              <span class="btn-text">Ya Realicé el Pago</span>
+            </button>
+          </div>
+            <div class="payment-form qr-form" id="plin-form">
+            <div class="qr-container">
+              <div class="qr-code-wrapper">
+                <img src="img/plinqr.jpeg" alt="QR Code" class="qr-code">
+                
+              </div>
+              <div class="qr-instructions">
+                <h3>Sigue estos pasos:</h3>
+                <ol>
+                  <li>Abre tu app de <strong class="payment-name">Yape</strong></li>
+                  <li>Escanea el código QR</li>
+                  <li>Confirma el monto de <strong>S/ 1,200.00</strong></li>
+                  <li>Completa el pago</li>
+                </ol>
+                <div class="qr-number">
+                  <p>O transfiere al número:</p>
+                  <div class="phone-number">
+                    <span>+51 987 654 321</span>
+                    <button class="btn-copy"><i class="fas fa-copy"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-pay btn-confirm">
+              <span class="btn-text">Ya Realicé el Pago</span>
+            </button>
+          </div>
+
+          <!-- Transfer Form -->
+          <div class="payment-form transfer-form" id="transfer-form">
+            <div class="bank-details">
+              <h3>Datos para Transferencia</h3>
+              <div class="detail-item">
+                <span class="detail-label">Banco:</span>
+                <span class="detail-value">BCP - Banco de Crédito del Perú</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Cuenta Corriente:</span>
+                <span class="detail-value">194-1234567-0-00 <button class="btn-copy"><i class="fas fa-copy"></i></button></span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">CCI:</span>
+                <span class="detail-value">002-194-001234567000-00 <button class="btn-copy"><i class="fas fa-copy"></i></button></span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Titular:</span>
+                <span class="detail-value">IESTP Diseño Gráfico S.A.C.</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">RUC:</span>
+                <span class="detail-value">20123456789</span>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label>Número de Operación</label>
+              <input type="text" placeholder="Ingresa el número de tu transferencia">
+            </div>
+            <button class="btn-pay">
+              <span class="btn-text">Confirmar Pago</span>
+            </button>
+          </div>
+
+          <!-- PayPal Form -->
+          <div class="payment-form paypal-form" id="paypal-form">
+            <div class="paypal-redirect">
+              <div class="paypal-logo">
+                <i class="fab fa-paypal"></i>
+              </div>
+              <h3>Serás redirigido a PayPal</h3>
+              <p>Completa tu pago de forma segura en la plataforma de PayPal</p>
+              <div class="redirect-info">
+                <i class="fas fa-info-circle"></i>
+                <span>Al hacer clic, aceptas los términos de PayPal</span>
+              </div>
+            </div>
+            <button class="btn-pay btn-paypal">
+              <span class="btn-text">Continuar con PayPal</span>
+            </button>
+          </div>
+
+          <!-- Cash Form -->
+          <div class="payment-form cash-form" id="cash-form">
+            <div class="cash-instructions">
+              <h3>Paga en Agentes Autorizados</h3>
+              <div class="agent-logos">
+                <div class="agent-logo">BCP</div>
+                <div class="agent-logo">Interbank</div>
+                <div class="agent-logo">BBVA</div>
+              </div>
+              <div class="cash-code">
+                <p>Código de Pago:</p>
+                <div class="code-display">
+                  <span class="code">CIP-123456789</span>
+                  <button class="btn-copy"><i class="fas fa-copy"></i></button>
+                </div>
+              </div>
+              <div class="cash-steps">
+                <ol>
+                  <li>Acércate a cualquier agente autorizado</li>
+                  <li>Proporciona el código de pago</li>
+                  <li>Realiza el pago de <strong>S/ 1,200.00</strong></li>
+                  <li>Guarda tu comprobante</li>
+                </ol>
+              </div>
+            </div>
+            <button class="btn-pay btn-confirm">
+              <span class="btn-text">Ya Realicé el Pago</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Payment Summary -->
+        <div class="payment-summary">
+          <div class="summary-card">
+            <h3>Resumen de Compra</h3>
+            <div class="summary-item">
+              <span>Curso: Diseño Gráfico Especializado</span>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-item">
+              <span>Subtotal</span>
+              <span>S/ 1,200.00</span>
+            </div>
+            <div class="summary-item">
+              <span>Descuento</span>
+              <span class="discount">-S/ 0.00</span>
+            </div>
+            <div class="summary-divider"></div>
+            <div class="summary-total">
+              <span>Total</span>
+              <span>S/ 1,200.00</span>
+            </div>
+            <div class="benefits-list">
+              <h4>Incluye:</h4>
+              <ul>
+                <li><i class="fas fa-check"></i> Certificado Digital</li>
+                <li><i class="fas fa-check"></i> 6 Módulos Completos</li>
+                <li><i class="fas fa-check"></i> Soporte 24/7</li>
+                <li><i class="fas fa-check"></i> Acceso de por vida</li>
+              </ul>
+            </div>
+          </div>
+          <div class="security-info">
+            <i class="fas fa-lock"></i>
+            <span>Pago 100% seguro y encriptado</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="success-modal">
+      <div class="modal-content">
+        <div class="success-animation">
+          <div class="checkmark-circle">
+            <div class="checkmark"></div>
+          </div>
+          <div class="confetti"></div>
+        </div>
+        <h2 class="success-title">¡Pago Exitoso!</h2>
+        <p class="success-message">Tu inscripción ha sido confirmada</p>
+        <div class="success-details">
+          <p>Recibirás un correo con los detalles de acceso al curso</p>
+          <p class="transaction-id">ID de transacción: <strong>#TXN123456789</strong></p>
+        </div>
+        <button class="btn-continue" onclick="window.location.href='medio-pago.html'">
+          Volver al Curso
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+
+    <script src="medios-pago.js"></script>
+    <script>
+      function loadHTML(id, url) {
+        fetch(url)
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById(id).innerHTML = data;
+          });
+      }
+      loadHTML('navbar', 'nav.html');
+      loadHTML('footer', 'footer.html');
+    </script>
+  </body>
+</html>

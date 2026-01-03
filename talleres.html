@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IESTP - Talleres</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="talleres.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Touch+Me+Sans+Petite+Black&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-custom"></nav>
+
+  <!-- Hero Section -->
+  <div class="hero-banner fade-in">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <h1>"Talleres prácticos para aprender haciendo"</h1>
+      <p>Descubre nuestros talleres presenciales y virtuales</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar fade-in">
+      <div class="sidebar-header">
+        <i class="fas fa-filter"></i>
+        <h3>Categorías</h3>
+      </div>
+
+      <div class="category-filter">
+        <label class="category-label">
+          <input type="checkbox" id="creativos" checked>
+          <span class="checkmark"></span>
+          <span class="label-text">Creativos</span>
+        </label>
+
+        <label class="category-label">
+          <input type="checkbox" id="tecnologicos">
+          <span class="checkmark"></span>
+          <span class="label-text">Tecnológicos</span>
+        </label>
+
+        <label class="category-label">
+          <input type="checkbox" id="negocios">
+          <span class="checkmark"></span>
+          <span class="label-text">Negocios</span>
+        </label>
+      </div>
+
+      <button class="clear-filters">
+        <i class="fas fa-redo"></i> Borrar filtros
+      </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>Encuentra el taller ideal para ti</h1>
+
+      <div class="course-cards">
+        <!-- Taller 1 -->
+        <div class="card fade-in" data-category="creativos">
+          <h3>TALLER DE DIBUJO DIGITAL</h3>
+          <div class="profile-pic">
+            <img src="img/talleres/dibujo digital.jpg" alt="Taller de Dibujo Digital">
+          </div>
+          <div class="bottom">
+            <div class="content">
+              <span class="name">DIBUJO DIGITAL TEENS</span>
+              <span class="about-me">Aprende ilustración digital desde cero con tablet o mouse.</span>
+            </div>
+            <div class="bottom-bottom">
+              <button class="button" onclick="window.location.href='taller-dibujo-digital.html'">Inscríbete</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taller 2 -->
+        <div class="card fade-in" data-category="tecnologicos">
+          <h3>TALLER DE PROGRAMACIÓN CON ROBOTS</h3>
+          <div class="profile-pic">
+            <img src="img/talleres/pro-robots.webp" alt="Taller de Programación con Robots">
+          </div>
+          <div class="bottom">
+            <div class="content">
+              <span class="name">ROBÓTICA BÁSICA KIDS</span>
+              <span class="about-me">Construye y programa robots con bloques gráficos.</span>
+            </div>
+            <div class="bottom-bottom">
+              <button class="button" onclick="window.location.href='taller-robots.html'">Inscríbete</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taller 3 -->
+        <div class="card fade-in" data-category="tecnologicos">
+          <h3>TALLER DE CREACIÓN DE VIDEOJUEGOS</h3>
+          <div class="profile-pic">
+            <img src="img/talleres/creacion-juegos.jpg" alt="Taller de Videojuegos">
+          </div>
+          <div class="bottom">
+            <div class="content">
+              <span class="name">VIDEOJUEGOS 2D</span>
+              <span class="about-me">Diseña y programa tus propios videojuegos 2D.</span>
+            </div>
+            <div class="bottom-bottom">
+              <button class="button" href="creacion-juegos.html">Inscríbete</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taller 4 -->
+        <div class="card fade-in" data-category="creativos">
+          <h3>TALLER DE FOTOGRAFÍA CREATIVA</h3>
+          <div class="profile-pic">
+            <img src="img/talleres/Taller-fotografia.jpg" alt="Taller de Fotografía">
+          </div>
+          <div class="bottom">
+            <div class="content">
+              <span class="name">FOTOGRAFÍA URBANA</span>
+              <span class="about-me">Aprende composición, luz y edición básica.</span>
+            </div>
+            <div class="bottom-bottom">
+              <button class="button">Inscríbete</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taller 5 -->
+        <div class="card fade-in" data-category="negocios">
+          <h3>TALLER DE EMPRENDIMIENTO JUVENIL</h3>
+          <div class="profile-pic">
+            <img src="img/talleres/emprendimiento.jpg" alt="Taller de Emprendimiento Juvenil">
+          </div>
+          <div class="bottom">
+            <div class="content">
+              <span class="name">EMPRENDE TUS IDEAS</span>
+              <span class="about-me">Diseña tu primer modelo de negocio paso a paso.</span>
+            </div>
+            <div class="bottom-bottom">
+              <button class="button">Inscríbete</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Taller 6 -->
+        <div class="card fade-in" data-category="negocios">
+          <h3>TALLER DE CREADORES</h3>
+          <div class="profile-pic">
+            <img src="img/talleres/CURSO_REDES_SOCIALES.jpg" alt="Taller de Redes Sociales">
+          </div>
+          <div class="bottom">
+            <div class="content">
+              <span class="name">REDES SOCIALES</span>
+              <span class="about-me">Crea contenido para Instagram, TikTok y más.</span>
+            </div>
+            <div class="bottom-bottom">
+              <button class="button" href="creacion-juegos.html">Inscríbete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paginación -->
+      <div class="pagination fade-in">
+        <button class="pagination-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <span class="pagination-text">Página 1 de 1</span>
+        <button class="pagination-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Certificados Section -->
+  <section class="certificado-section">
+    <div class="certificado-content">
+      <div class="certificado-icon">
+        <i class="fa-solid fa-certificate"></i>
+      </div>
+      <h2>CERTIFICADOS POR TALLER</h2>
+      <p>Recibe una constancia al completar cada taller práctico.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer"></footer>
+
+  <script>
+    // Animaciones al hacer scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Cargar navbar y footer
+    function loadHTML(id, url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        });
+    }
+    loadHTML('navbar', 'nav.html');
+    loadHTML('footer', 'footer.html');
+  </script>
+</body>
+</html>
